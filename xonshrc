@@ -1,0 +1,63 @@
+#import functions from xontribs
+from xontrib.worklog import _generate_worklog, _hours, _generate_excel_timesheet, _open_worklog, _cat_links_worklog, _cat_links_all, _import_worklog_data
+from xontrib.greps import _recursiveDirectoryGrep, _recursiveDirectoryReplace
+from xontrib.music import _ytdx
+from xontrib.files import _sanitize_filenames, _CML
+from xontrib.kontoala import _conv_kon_to_ala_colors_term
+
+#xontrib aliases
+aliases["gwl"]               = _generate_worklog
+aliases["owl"]               = _open_worklog
+aliases["iwld"]              = _import_worklog_data
+aliases["clw"]               = _cat_links_worklog 
+aliases["cla"]               = _cat_links_all
+aliases["gxlsx"]             = _generate_excel_timesheet
+aliases["hours"]             = _hours
+aliases["rdg"]               = _recursiveDirectoryGrep
+aliases["rdr"]               = _recursiveDirectoryReplace
+aliases["ytdx"]              = _ytdx
+aliases["sname"]             = _sanitize_filenames
+aliases["ccterm"]            = _conv_kon_to_ala_colors_term 
+
+#Setup basic aliases 
+aliases["sudo"]	             = "sudo"
+aliases["python"]            = "python3"
+aliases["vi"]	             = "nvim"
+aliases["vim"]	             = "nvim"
+aliases["pms"]		     = "sudo apt search"
+aliases["pmi"]		     = "sudo apt install"
+aliases["pmr"]		     = "sudo apt remove"
+aliases["pmu"]		     = "sudo apt update && sudo apt upgrade"
+aliases["pmc"]		     = "sudo apt autoremove"
+
+
+#Add folders to path
+$PATH.append(f"{$HOME}/hbin")
+$PATH.append(f"{$HOME}/.cargo/bin")
+
+#Set Important Environment Variables
+
+$PROMPT = '{INTENSE_GREEN}[{YELLOW}{RESET}{BLUE}{RESET}{cwd}{INTENSE_GREEN}]─[{RESET}{INTENSE_YELLOW}{curr_branch}{INTENSE_GREEN}]\n{INTENSE_GREEN}╰─>{INTENSE_BLUE}{prompt_end}{RESET} '
+
+$arm_prompt = '{INTENSE_GREEN}[{YELLOW}{RESET}{BLUE}{RESET}{cwd}{INTENSE_GREEN}]─[{RESET}{INTENSE_YELLOW}{curr_branch}{INTENSE_GREEN}]\n{INTENSE_GREEN}╰─> ARM {INTENSE_BLUE}{prompt_end}{RESET} '
+
+$normal_prompt = '{INTENSE_GREEN}[{YELLOW}{RESET}{BLUE}{RESET}{cwd}{INTENSE_GREEN}]─[{RESET}{INTENSE_YELLOW}{curr_branch}{INTENSE_GREEN}]\n{INTENSE_GREEN}╰─>{INTENSE_BLUE}{prompt_end}{RESET} '
+
+#These functions are typically stored as xontribs to keep a clean .xonshrc 
+#They are here to provide guidance on how to create functionality
+
+#setup aliased internal functions
+#These are 'bash' like also take the params as a list
+def _test(param:list):
+    print("Testing...")
+    print(f"Parameters: {param}")
+aliases["itest"] = _test
+
+#setup named external functions
+#These are 'python' like. They are typical python functions.
+def etest(string:str, integer:int):
+    print("Testing...")
+    print(f"Parameters: {string}, {integer}")
+    
+
+
