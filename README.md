@@ -22,6 +22,7 @@ Configuration files for a mutli-monitor workspace in bspwm.
     - nemo
     - code
     - spectacle
+    - lxappearance
 
 ### Ubuntu 22.04 "Jammy Jellyfish"
 

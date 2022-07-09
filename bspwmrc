@@ -62,7 +62,7 @@ sh -c 'sleep 2; exec nitrogen --restore &'
 sh -c 'sleep 2; ~/.config/polybar/launch.sh &'
 gnome-screensaver &
 ulauncher --hide-window &
-
+xsetroot -cursor_name left_ptr &
 
 
 
