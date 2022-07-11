@@ -27,7 +27,7 @@ super + q
 
 #file manager
 super + e
-	nemo	
+	nautilus --new-window
 
 #web browser
 super + w

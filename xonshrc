@@ -29,6 +29,7 @@ aliases["pmi"]		     = "sudo apt install"
 aliases["pmr"]		     = "sudo apt remove"
 aliases["pmu"]		     = "sudo apt update && sudo apt upgrade"
 aliases["pmc"]		     = "sudo apt autoremove"
+aliases["pml"]		     = "sudo apt list --installed"
 
 
 #Add folders to path

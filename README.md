@@ -13,16 +13,18 @@ Configuration files for a mutli-monitor workspace in bspwm.
     - arandr
     - autorandr
     - gnome-screensaver
-    - gucharmap
+    - kcharselect 
     - neovim
     - picom
     - ulauncher
     - alacritty
     - xonsh
-    - nemo
+    - nautilus 
     - code
-    - spectacle
+    - kde-spectacle
     - lxappearance
+    - jq
+    - pavucontrol
 
 ### Ubuntu 22.04 "Jammy Jellyfish"
 
