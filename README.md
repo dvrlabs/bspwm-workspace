@@ -82,15 +82,19 @@ sudo snap install spectacle
 
 ##### First time setup
 
+Run install.sh to copy the fonts over and generate some configuration directories. 
+
 Run ```nitrogen ~/Pictures/wallpapers``` **assuming that is a directory containing papes on your system**
 Setup wallpapers fo the first time.
 
 Conigure monitors to your liking using arandr. Afterwards, save that config
 by doing ```autorandr --save bspwm```
 
-Run install.sh to copy the fonts over and generate some configuration directories. Also will try to download
-the available components from 22.04's repos.
+use lxappearance to set breeze dark theme, icons, and mouse cursor. set font to Noto Sans 12.
+
 
 #### Updating Configurations
 
 Use the pushConfigs.sh script to copy the configuration files into your system. 
+
+
