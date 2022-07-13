@@ -72,13 +72,19 @@ Yet another to be installed by a third party package manager. Can be installed t
 python3 -m pip install 'xonsh[full]'
 ```
 
-#### Spectacle
+#### Spectacle (KDE tool)
 
-A snippet/ screenshot tool. looks like it's available in 22.04 via a snap
+A snippet/ screenshot tool. looks like it's available in 22.04 via a snap.
 
+If not: 
 ```
 sudo snap install spectacle
 ```
+Then:
+```
+sudo apt install kde-spectacle
+```
+
 
 ##### First time setup
 
